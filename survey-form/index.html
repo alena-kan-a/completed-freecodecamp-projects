@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <title>NPC Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="survey-description">
+    <h1 id="title">NPC Survey Form</h1>
+    <p id="description">Hello and thank you for your interest in my game, <em>Rosy Cloud Tales</em>!</p>
+    <p id="description">My game is currently in development, and I need ideas for its non-playable charaters (NPC). If you wish for your character to appear in <em>Rosy Cloud Tales</em> and to be credited in my game, please fill in the form below!</p>
+    </div>
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+      <p class="fields">Fields marked with * are required</p>
+      <fieldset>
+        <label for="character-name" id="character-name-label">Character Name:*<input id="character-name" placeholder="Quiettella the Bright" required /></label>
+        <label id="number-label" for="number">Character Age:<input id="number" type="number" min="10" max="250" placeholder="25" value="number" /></label>
+        <p class="gender-p">Gender:*</p>
+         <label for="gender-male" id="gender-male-label"><input name="gender" id="gender-male" type="radio" value="male" class="inline" />Male</label>
+         <label for="gender-female" id="gender-female-label"><input name="gender" id="gender-female" type="radio" value="female" class="inline" />Female</label>
+         <label for="gender-other" id="gender-other-label"><input name="gender" id="gender-other" type="radio" value="other" class="inline" />Other</label>
+         <label for="dropdown" id="race-label">Race:*
+           <select id="dropdown" required>
+              <option value="">(select one)</option>
+            <option value="1">Human</option>
+            <option value="2">Elf</option>
+            <option value="3">Dwarf</option>
+            <option value="4">Mermaid</option>
+           </select>
+           </label>
+           <label for="character-description" id="character-description-label">Character Description:
+             <textarea id="character-description" placeholder="She has purple eyes and loves to sing. Quiet and positive."></textarea>
+           </label>
+      </fieldset>
+      <fieldset>
+        <label for="name" id="name-label">Your Name/Nickname:*<input required id="name" placeholder="Your Name" /></label>
+        <label for="email" id="email-label">Email:*<input required id="email" type="email" placeholder="Your Email" /></label>
+      </fieldset>
+      <fieldset>
+        <label for="no-obscure-words" id="no-obscure-words-label"><input id="no-obscure-words" type="checkbox" value="A" class="inline" required /> I have not used any obscure words in the character's name and/or description.</label>
+         <label for="character-usage-consent" id="character-usage-consent-label"><input id="character-usage-consent" type="checkbox" value="B" class="inline" required /> I consent to my character being added to the game.</label>
+        <label for="character-usage" id="character-usage-label"><input id="character-usage" type="checkbox" value="C" class="inline" required /> I understand that my character might not be added to the final version of the game.</label>
+        <label for="personal-data" id="personal-data-label"><input id="personal-data" type="checkbox" value="D" class="inline" required /> I consent to the processing of the personal data that I have provided.</label>
+      </fieldset>
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>

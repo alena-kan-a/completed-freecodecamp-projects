@@ -1,0 +1,92 @@
+body {
+background-color: #ffffff;
+opacity: 1;
+background-image:  linear-gradient(30deg, #c7e8f8 12%, transparent 12.5%, transparent 87%, #c7e8f8 87.5%, #c7e8f8), linear-gradient(150deg, #c7e8f8 12%, transparent 12.5%, transparent 87%, #c7e8f8 87.5%, #c7e8f8), linear-gradient(30deg, #c7e8f8 12%, transparent 12.5%, transparent 87%, #c7e8f8 87.5%, #c7e8f8), linear-gradient(150deg, #c7e8f8 12%, transparent 12.5%, transparent 87%, #c7e8f8 87.5%, #c7e8f8), linear-gradient(60deg, #c7e8f877 25%, transparent 25.5%, transparent 75%, #c7e8f877 75%, #c7e8f877), linear-gradient(60deg, #c7e8f877 25%, transparent 25.5%, transparent 75%, #c7e8f877 75%, #c7e8f877);
+background-size: 18px 32px;
+background-position: 0 0, 0 0, 9px 16px, 9px 16px, 0 0, 9px 16px;
+  color: #e14567;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+div {
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.fields {
+  font-size: 11px;
+  margin-top: -1em;
+  margin-bottom: -2em;
+  margin-left: 1em;
+}
+
+.gender-p {
+  margin-left: 0.5em;
+  margin-top: -0.05em;
+  margin-bottom: -0.05em;
+}
+
+.survey-description, form {
+  width: 70vw;
+  max-width: 600px;
+  min-width: 400px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+h1,p#description {
+  margin: 0.5em auto;
+  text-align: center;
+}
+
+form {
+  padding: 1em;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem;
+}
+
+input, textarea, select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+textarea {
+  height: 5em;
+  display: block;
+}
+
+.inline {
+  width: unset;
+  min-height: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 30%;
+  min-width: 200px;
+  height: 2.5em;
+  margin: 1em auto;
+  background-color: #c7e8f890;
+  color: #e14567;
+  border-color: #e14567;
+  font-size: 16px;
+  font-weight: bold;
+}
