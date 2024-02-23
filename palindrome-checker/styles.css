@@ -1,0 +1,46 @@
+:root {
+  /*colors*/
+  --primary-color: #F9F7F3;
+  --font-color: #0FA3B1;
+  --background-color: #B5E2FA;
+  --accent-color-1: #F7A072;
+  --accent-color-2: #EDDEA4;
+
+  /*fonts*/
+  --root-font-size: 16px;
+  font-size: var(--root-font-size);
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  color: var(--font-color);
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+a {
+    color: var(--accent-color-1);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color-2);
+}
+
+.box {
+    width: 70%;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: justify;
+}

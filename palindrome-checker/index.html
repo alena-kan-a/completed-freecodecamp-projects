@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header><p>Palindrome Checker</p></header>
+  <header><h1>Palindrome Checker</h1></header>
   <main>
-      <div><p>Is it a Palindrome?</p></div>
-      <div>
-        <label>
-        <input />
-        <button>
+      <div class="app-area box">
+        <label for="check-word-text-field"><h2>Is it a Palindrome?</h2></label>
+        <input id="check-word-text-field"/>
+        <button id="check-word-button" type="button">Check word!</button>
       </div>
-      <div><p>A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p></div>
+      <div class="note-area box"><p>A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p></div>
   </main>
-  <footer><p></p></footer>
+  <footer><p>Exercise project for <a href="https://www.freecodecamp.org/">freecodecamp</a>, 2024.</p></footer>
+  <script src="script.js"></script>
 </body>
 </html>
