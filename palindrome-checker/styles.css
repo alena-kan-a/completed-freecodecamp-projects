@@ -21,6 +21,14 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--background-color);
+}
+
+header, footer, .box {
+  background-color: var(--primary-color);
+}
+
 h1 {
   font-size: 2em;
 }
