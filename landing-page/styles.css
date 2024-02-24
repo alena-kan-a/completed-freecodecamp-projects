@@ -1,0 +1,258 @@
+:root {
+  --accent-color1: #A27B52;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+    scroll-padding-top: 140px;
+    }
+
+html {
+  font-family: Courier New;
+  font-size: 20px;
+}
+
+h1, h2, h3, h4 {
+  font-family: Trebuchet MS;
+}
+
+h1, h2, h3, h4 {
+  color: var(--accent-color1);
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  position: fixed;
+  background-image: url("https://github.com/prynadd/freecodecamp-landing-page/blob/main/leone-venter-mTkXSSScrzw-unsplash.jpg?raw=true");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-color: #E5E5E5;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 140px;
+}
+
+h1.header-h1 {
+  display: inline;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+#header-img {
+  height: 30px;
+  filter: invert(100%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.he1 {
+  margin-left: 120px; 
+}
+
+.he2 {
+  width: 250px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-color1);
+  font-family: Trebuchet MS;
+}
+
+a:hover {
+  color: #ee869a;
+  margin-left: 5px;
+}
+
+span.dreamy-treasures {
+  font-weight: bold;
+  color: var(--accent-color1);
+}
+
+span.sign-up {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+main {
+  width: 700px;
+  margin: 170px auto 20px;
+  text-align: center;
+}
+
+section {
+  margin: 15px;
+}
+
+h2.section-header {
+  padding-bottom: 12px;
+}
+
+video {
+  margin: 10px auto 5px;
+}
+
+section.inverse {
+  background-color: #ee869a;
+  color: white;
+}
+
+section.item-list {
+  text-align: justify;
+}
+
+h2#Whats-Inside, h2#Join-the-Club {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+li.inside-item {
+  margin: 20px;
+}
+
+li.inside-item:last-of-type {
+  padding-bottom: 20px;
+}
+
+form#form {
+  padding: 20px;
+}
+
+input {
+  padding: 6px;
+  font-size: 1rem;
+}
+
+input#submit {
+  color: var(--accent-color1);
+  border: 2px solid var(--accent-color1);
+  background: white;
+}
+
+input#submit:hover {
+  background: var(--accent-color1);
+  color: white;
+}
+
+div.Subscription-Options {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.Subscription-Option {
+  border: 1px solid var(--accent-color1);
+  padding: 8px;
+  width: 220px;
+}
+
+h4 {
+  color: white;
+  background-color: var(--accent-color1);
+  font-size: 1.1rem;
+  padding: 4px;
+}
+
+div#Subscription-Options {
+  margin: 10px auto 15px;
+}
+
+i.fa-gift {
+  color: var(--accent-color1);
+  font-size: 0.8rem;
+}
+
+div.inside-plans {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+div.justify-text {
+  text-align: left;
+  margin-top: 15px;
+  
+}
+
+div.pb2 {
+  margin-top: 7.5rem;
+}
+
+div.pb3 {
+  margin-top: 7.5rem;
+}
+
+p.price {
+  color: #ee869a;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: -20px;
+}
+
+div.vertical-center-option {
+  margin-top: 108px;
+}
+
+button {
+  margin: 10px;
+  padding: 6px;
+  font-size: 1.2rem;
+  color: var(--accent-color1);
+  border: 2px solid var(--accent-color1);
+  background: transparent;
+}
+
+button:hover {
+  background:#ee869a;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #ee869a;
+  color: white;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+p.margin {
+  padding-top: 25px;
+}
+
+@media (max-width: 700px) {
+  html {
+  font-size: 15px;
+  }  
+
+div.pb3 {
+  margin-top: 5.2rem;
+}
+
+}
