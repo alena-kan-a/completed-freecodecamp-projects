@@ -76,10 +76,6 @@ header, footer {
   padding: 20px;
 }
 
-#result {
-  display: none;
-}
-
 #text-input, #check-btn {
   margin: 5px 0 8px;
   padding: 8px;
@@ -110,4 +106,8 @@ header, footer {
 .emphasized-text {
   color: var(--font-accent-color);
   font-weight: 600;
+}
+
+.hide {
+  display: none;
 }
