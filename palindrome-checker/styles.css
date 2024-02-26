@@ -76,16 +76,16 @@ header, footer {
   padding: 20px;
 }
 
-#result-area {
+#result {
   display: none;
 }
 
-#check-word-text-field, #check-word-button {
+#text-input, #check-btn {
   margin: 5px 0 8px;
   padding: 8px;
 }
 
-#check-word-text-field {
+#text-input {
   width: 200px;
   border-style: none;
   border-radius: 5px;
@@ -93,7 +93,7 @@ header, footer {
 
 }
 
-#check-word-button {
+#check-btn {
   background-color: var(--accent-color-1);
   border-radius: 5px;
   border-style: none;
@@ -103,7 +103,7 @@ header, footer {
   text-decoration: none;
 }
 
-#check-word-button:hover {
+#check-btn:hover {
   background-color: var(--font-accent-color);
 }
 
