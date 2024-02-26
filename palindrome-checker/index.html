@@ -9,19 +9,25 @@
 <body>
   <header><h1>Palindrome Checker</h1></header>
   <main>
-    <div class="container">
-      <div class="app-area">
-        <label for="check-word-text-field"><h2>Is it a Palindrome?</h2></label>
-        <input
-        type="text"
-        id="check-word-text-field"
-        placeholder="Enter word"
-        required
-        />
-        <button id="check-word-button" type="button">Check word!</button>
+    <div class="main-container">
+      <div class="inner-container" id="app-area">
+        <div>
+          <label for="check-word-text-field"><h2>Is it a Palindrome?</h2></label>
+          <input
+          type="text"
+          id="check-word-text-field"
+          placeholder="Enter word"
+          required
+          />
+          <button id="check-word-button" type="button">Check word!</button>
+        </div>
+        <!--THIS IS FOR TEST, DELETE AFTER THE TEST-->
+        <div id="test-area">Your word <span class="emphasized-text">testword</span> is not a palindrome. Try again!</div>
+        <!---->
+        <div id="result-area"></div>
       </div>
-      <div class="note-area">
-        <p>A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>
+      <div class="inner-container" id="note-area">
+        <p>A <span class="emphasized-text">palindrome</span> is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>
       </div>
       </div>
   </main>
