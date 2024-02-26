@@ -3,7 +3,7 @@ const textInput = document.getElementById("text-input");
 const resultOutput = document.getElementById("result");
 
 function cleanInputString(str) {
-  const regex = /\s\d\W/gi;
+  const regex = /[^A-Za-z0-9]/gi;
   return str.replace(regex, '').toLowerCase();
 };
 
