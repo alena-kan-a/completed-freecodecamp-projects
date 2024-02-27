@@ -18,11 +18,11 @@ function checkWord (word) {
   const cleanString = cleanInputString(word);
   const reverseWord = [...cleanString].reverse().join('');
   if (cleanString === reverseWord) {
-    const HTMLString = `<p>Your word <span class="emphasized-text">${wordToCheck}</span> is a palindrome. Hooray!</p>`;
+    const HTMLString = `<p><span class="emphasized-text">${wordToCheck}</span> is a palindrome. Hooray!</p>`;
     resultOutput.classList.remove('hide');
     return resultOutput.innerHTML = HTMLString;
   } else if (cleanString !== reverseWord) {
-    const HTMLString = `<p>Your word <span class="emphasized-text">${wordToCheck}</span> is not a palindrome. Try again!</p>`;
+    const HTMLString = `<p><span class="emphasized-text">${wordToCheck}</span> is not a palindrome. Try again!</p>`;
     resultOutput.classList.remove('hide');
     return resultOutput.innerHTML = HTMLString;
   };
