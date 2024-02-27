@@ -111,3 +111,20 @@ header, footer {
 .hide {
   display: none;
 }
+
+@media (max-width: 500px) {
+  :root {
+    font-size: 12px;
+  }
+
+  .main-container {
+    width: 300px;
+    margin: 10px auto;
+    padding: 0 10px;
+}
+
+#text-input, #check-btn {
+  display: block;
+  margin: 5px auto 5px;
+}
+}
