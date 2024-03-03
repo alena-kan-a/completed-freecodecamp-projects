@@ -1,4 +1,4 @@
-const checkWordButton = document.getElementById("check-btn");
+const checkButton = document.getElementById("check-btn");
 const textInput = document.getElementById("text-input");
 const resultOutput = document.getElementById("result");
 
@@ -7,27 +7,35 @@ function cleanInputString(str) {
   return str.replace(regex, '').toLowerCase();
 };
 
-function checkWord (word) {
-  const wordToCheck = word;
-  
-  if (word === '') {
+function isPalindrome(str) {
+  const cleanString = cleanInputString(str);
+  const reverseString = [...cleanString].reverse().join('');
+    if (cleanString !== reverseString) {
+      return false;
+    }
+    return true;
+}
+
+function checkString(str) {
+  if (str === '') {
     alert('Please input a value');
     return;
   }
-  
-  const cleanString = cleanInputString(word);
-  const reverseWord = [...cleanString].reverse().join('');
-  if (cleanString === reverseWord) {
-    const HTMLString = `<p><span class="emphasized-text">${wordToCheck}</span> is a palindrome. Hooray!</p>`;
-    resultOutput.classList.remove('hide');
-    return resultOutput.innerHTML = HTMLString;
-  } else if (cleanString !== reverseWord) {
-    const HTMLString = `<p><span class="emphasized-text">${wordToCheck}</span> is not a palindrome. Try again!</p>`;
-    resultOutput.classList.remove('hide');
+
+  resultOutput.classList.remove('hide');
+
+  let HTMLString = `<p><span class="emphasized-text">${str}</span> is `;
+  if(isPalindrome(str)) {
+    HTMLString += `a palindrome. Hooray!</p>`;
+  } else {
+    HTMLString += `not a palindrome. Try again!</p>`;
+  }
     return resultOutput.innerHTML = HTMLString;
   };
-};
 
+checkButton.addEventListener("click", () => {
+    checkString(textInput.value);
+});
 checkWordButton.addEventListener("click", () => {
     checkWord(textInput.value);
 });
